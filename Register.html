@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Register.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alice:regular"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Register</title>
+</head>
+<body>
+    <nav>
+        <img src="Image/Logo.png" height="60px">
+        <div class="menu">
+            <a href="Homepage.html">Trang chủ</a>
+            <a href="#">Thương hiệu</a>
+            <a href="Products.html">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="Contact.html">Liên hệ</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="Cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="Login.html"><i class="fa fa-user"></i></a>
+            <i class="fas fa-bars icon-sub-menu" onclick="appear()"></i>
+        </div>
+    </nav>
+    <div class="sub-menu">
+        <a href="Homepage.html">Trang chủ</a>
+            <a href="#">Thương hiệu</a>
+            <a href="Products.html">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="Contact.html">Liên hệ</a>
+    </div>
+    <script>
+        var subMenu=document.getElementsByClassName('sub-menu')[0];
+        function appear(){
+            if (subMenu.style.display==='none'){
+                subMenu.style.display='block';
+            }else{
+                subMenu.style.display='none';
+            }
+        }
+    </script>
+    <div class="container" id="blur">
+        <div class="title">
+            <h1>Đăng ký</h1>
+            <img class="title-left" src="Image/image-news6.png" alt="">
+            <img class="title-right" src="Image/Product2.png" alt="">
+        </div>
+        <article class="layout-login">
+            <div class="img-login">
+            </div>
+            <section class="form-login">
+                <center>
+                    <img src="Image/Logo.png" alt="">
+                <h1>Welcome to Luxury!</h1>
+                <p>Đăng ký tài khoản để có trải nghiệm tốt hơn</p>
+                </center>   
+                <label for="">Họ và tên</label><br>
+                <input class="input-long" type="text" placeholder="Nhập họ và tên"><br>
+                <label for="">Email</label><br>
+                <input class="input-long" type="email" placeholder="Nhập email"><br>
+                <div class="input-2col">
+                    <div><label for="">Số điện thoại</label><br>
+                        <input class="input-long" type="number" placeholder="Nhập SDT">
+                    </div>
+                    <div>
+                        <label for="">Ngày sinh</label><br>
+                        <input class="input-long" type="date">
+                    </div>
+                </div>
+                <label for="">Tạo mật khẩu</label><br>
+                <input class="input-long" type="password" placeholder="Tạo mật khẩu"><br>
+                <button onclick="successful()">Đăng ký</button>
+                <h2>Or</h2>
+                <div class="icon-login">
+                    <i class="facebook fab fa-facebook"></i>
+                    <i class="twitter fab fa-twitter	"></i>
+                    <i class="google fab fa-google-plus	"></i>
+                </div>
+            </section>
+        </article>
+    </div>
+    <section id="abc" class="checkout-success">
+        <div class="icon-check">
+            <i class="fa fa-check"></i>
+        </div>
+        <img class="img-logo" src="Image/Logo.png" alt="">
+        <h1>Đăng ký thành công</h1>
+        <p>Cảm ơn quý khách đã đăng ký</p>
+        <button onclick="after_successful()">Ok</button>
+    </section>
+    <script>
+        var box=document.getElementById('abc');
+        var blur=document.getElementById('blur');
+        function successful(){
+            box.style.top='200px';
+            box.style.transition='1s'
+            blur.classList.toggle('active');
+        }
+        function after_successful(){
+            box.style.top='-235px';
+            blur.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

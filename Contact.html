@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alice:regular"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <img src="Image/Logo.png" height="60px">
+        <div class="menu">
+            <a href="Homepage.html">Trang chủ</a>
+            <a href="#">Thương hiệu</a>
+            <a href="Products.html">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="Contact.html">Liên hệ</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="Cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="Login.html"><i class="fa fa-user"></i></a>
+            <i class="fas fa-bars icon-sub-menu" onclick="appear()"></i>
+        </div>
+    </nav>
+    <div class="sub-menu">
+        <a href="Homepage.html">Trang chủ</a>
+        <a href="#">Thương hiệu</a>
+        <a href="Products.html">Sản phẩm</a>
+        <a href="#">Đơn hàng</a>
+        <a href="Contact.html">Liên hệ</a>
+    </div>
+    <script>
+        var subMenu=document.getElementsByClassName('sub-menu')[0];
+        function appear(){
+            if (subMenu.style.display==='none'){
+                subMenu.style.display='block';
+            }else{
+                subMenu.style.display='none';
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="title">
+            <h1>Giỏ hàng</h1>
+            <img class="title-left" src="Image/image-news6.png" alt="">
+            <img class="title-right" src="Image/Product2.png" alt="">
+        </div>
+        <article class="layout-contact">
+            <section class="info-contact">
+                <h1>Thông tin</h1>
+                <div class="layout-info-contact">
+                    <p class="title-contact">Địa chỉ</p>
+                    <p> : 331 Nguyen Dinh Chieu/P.3/Q.3/HCM </p>
+                    <p class="title-contact">SDT</p> <p> : 1800 0091 | 028-3833-9999</p>
+                    <p class="title-contact">Email</p>
+                        <p>: contact@luxshopping.vn</p>
+                        <p class="title-contact">Tax code</p> <p>: 0312756049</p>
+                </div>
+                <h1>Nội dung liên hệ</h1>
+                <form action="">
+                    <div class="layout-input">
+                        <label class="title-contact" for="">Họ tên</label>
+                        <input type="text" placeholder="Họ tên">
+                        <label class="title-contact" for="">Số điện thoại</label>
+                        <input type="text" placeholder="Số điện thoại">
+                        <label class="title-contact" for="">Email</label>
+                        <input type="email" placeholder="Email">
+                        <label class="title-contact" for="">Nội dung</label>
+                        <textarea name="" id="" cols="64" rows="6" placeholder="Nội dung"></textarea>
+                    </div>
+                    <button type="submit">Gửi</button>
+                </form>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.50822
+            20660593!2d106.68190867394487!3d10.77233295927144!2m3!1f0!2f0!3f0!3m2!1i1024!
+            2i768!4f13.1!3m3!1m2!1s0x31752ee6fbf50b0d%3A0xeafd545dc3bb1ea3!2sLuxury%20Sho
+            pping!5e0!3m2!1svi!2s!4v1686192595843!5m2!1svi!2s" width="600" height="570"
+            style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <article class="art-promotion">
+            <center>
+                <section class="promotion">
+                    <div class="free-shipping">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div class="free-shipping">
+                            <h4>Miễn phí giao hàng</h4>
+                            <p> Khi đặt hàng trên toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-life-ring"></i>
+                        <div>
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p> Liên hệ bất kỳ lúc nào</p>
+                        </div>
+                    </div>
+                    <div class="safe">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Thanh toán an toàn</h4>
+                            <p>Thanh toán nhanh chóng</p>
+                        </div>
+                    </div>
+                </section>
+            </center>
+        </article>
+    </div>
+    <footer>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="footer-layout">
+            <div class="support">
+                <h1>Trợ giúp khách hàng</h1>
+                <p>
+                    Về chúng tôi <br>
+                    Chính sách bảo mật <br>
+                    Chính sách cookie <br>
+                    Chính sách bán hàng <br>
+                    Chính sách hậu mãi <br>
+                    Chính sách vận chuyển <br>
+                    Chính sách hoàn tiền <br>
+                    Bảo hành và sửa chữa đồng hồ
+                </p>
+            </div>
+            <div class="link">
+                <h1>Liên hệ website</h1>
+                <p>Trang chủ <br>
+                    Thương hiệu <br>
+                    Đồng hồ nam <br>
+                    Đồng hồ nữ <br>
+                    Đồng hồ đôi <br>
+                    Giỏ hàng <br>
+                    Đăng nhập <br>
+                    Đăng ký</p>
+            </div>
+            <div class="contact">
+                <h1>Liên hệ</h1>
+                <p>Facebook: Luxuryshopping <br>
+                    Gmail: Luxuryshop.vn <br>
+                    Hotline: 0988556325</p>
+                <img src="Image/Logo.png" alt="">
+            </div>
+            <div class="info-company">
+                <h1>Công ty xuất nhập khẩu hàng hiệu hoa kỳ</h1>
+                <p>Địa chỉ: 331 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP. HCM - Điện thoại: 1800 0091 | 
+                    028 3833 9999 | 028 7777 6677 | 024 7777 6677 - MST: 0312756049</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

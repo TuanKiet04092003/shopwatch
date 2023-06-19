@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Alice:regular" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Product</title>
+</head>
+
+<body>
+    <nav>
+        <img src="Image/Logo.png" height="60px">
+        <div class="menu">
+            <a href="Homepage.html">Trang chủ</a>
+            <a href="#">Thương hiệu</a>
+            <a href="Products.html">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="Contact.html">Liên hệ</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="Cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="Login.html"><i class="fa fa-user"></i></a>
+            <i class="fas fa-bars icon-sub-menu" onclick="appear()"></i>
+        </div>
+    </nav>
+    <div class="sub-menu">
+        <a href="Homepage.html">Trang chủ</a>
+        <a href="#">Thương hiệu</a>
+        <a href="Products.html">Sản phẩm</a>
+        <a href="#">Đơn hàng</a>
+        <a href="Contact.html">Liên hệ</a>
+    </div>
+    <script>
+        var subMenu = document.getElementsByClassName('sub-menu')[0];
+        function appear() {
+            if (subMenu.style.display === 'none') {
+                subMenu.style.display = 'block';
+            } else {
+                subMenu.style.display = 'none';
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="title">
+            <h1>Sản phẩm</h1>
+            <img class="title-left" src="Image/image-news6.png" alt="">
+            <img class="title-right" src="Image/Product2.png" alt="">
+        </div>
+        <article class="Page-products">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Tìm kiếm">
+                <i class="fa fa-search"></i>
+            </div>
+            <aside class="filter">
+                <form action="">
+                    <div class="search-suggestion-all">
+                        <div class="search-suggestion">
+                            <div>citizen</div>
+                            <div>bulova</div>
+                            <div>rolex</div>
+                            <div>balmain</div>
+                            <div>bvlgari</div>
+                            <div>chanel</div>
+                        </div>
+                        <div class="search-row3">
+                            <div>dong ho nu</div>
+                            <div>dong ho nam</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h1>Loại đồng hồ</h1>
+                    <div class="type-watch">
+                        <input type="radio" name="choose-type" id="male" checked> <label for="male">Đồng hồ nam</label>
+                        <br>
+                        <input type="radio" name="choose-type" id="female"> <label for="female">Đồng hồ nữ</label> <br>
+                        <input type="radio" name="choose-type" id="couple"> <label for="couple">Đồng hồ đôi</label> <br>
+                    </div>
+                    <hr>
+                    <div class="choose-price">
+                        <h1>Giá</h1>
+                        <select name="" id="">
+                            <option>Dưới 10.000.000 Đ</option>
+                            <option>Từ 10.000.000 Đ đến 20.000.000Đ</option>
+                            <option>Từ 20.000.000 Đ đến 50.000.000Đ</option>
+                            <option>Từ 50.000.000 Đ đến 100.000.000Đ</option>
+                            <option>Từ 100.000.000 Đ đến 200.000.000Đ</option>
+                            <option>Từ 200.000.000 Đ đến 500.000.000Đ</option>
+                            <option>Trên 500.000.000Đ</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <h1>Thương hiệu</h1>
+                    <div class="choose-brand">
+                        <img src="Image/img-watch-brand1.png" alt="">
+                        <img src="Image/img-watch-brand2.png" alt="">
+                        <img src="Image/img-watch-brand3.png" alt="">
+                        <img src="Image/img-watch-brand4.png" alt="">
+                        <img src="Image/img-watch-brand5.png" alt="">
+                        <img src="Image/img-watch-brand6.png" alt="">
+                        <img src="Image/img-watch-brand7.png" alt="">
+                        <img src="Image/img-watch-brand8.png" alt="">
+                        <img src="Image/img-watch-brand9.png" alt="">
+                    </div>
+                    <hr>
+                    <h1>Màu</h1>
+                    <input type="color">
+                    <div class="choose-color">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                        <div class="color7"></div>
+                        <div class="color8"></div>
+                        <div class="color9"></div>
+                        <div class="color10"></div>
+                    </div>
+                </form>
+            </aside>
+            <section class="Page-products-big">
+                <h1>Đồng hồ nam</h1>
+                <div class="man-watch">
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product1.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Omega Constellation</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">452,088,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product2.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Versace V-Tribute</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">30,350,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product3.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Omega Constellation </p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">535,626,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>Đồng hồ nữ</h1>
+                <div class="man-watch">
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-female1.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Fossil Harwell</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">6,084,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-female2.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Versace Eon Red</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">26,275,920đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-female3.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Vacheron Constantin</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">545,706,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>Đồng hồ đôi</h1>
+                <div class="man-watch">
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-couple1.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Fossil BQ2643SET</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">8,604,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-couple2.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Fossil BQ2661SET</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">7,335,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/img-couple3.jpg" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <a href="Cart.html"><i onclick="getInfoCart(this)" class="fa fa-shopping-cart cart"></i></a>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Fossil His and Her</p>
+                            <div class="rating">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">70,626,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <footer>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="footer-layout">
+            <div class="support">
+                <h1>Trợ giúp</h1>
+                <p>
+                    Về chúng tôi <br>
+                    Chính sách bảo mật <br>
+                    Chính sách cookie <br>
+                    Chính sách bán hàng <br>
+                    Chính sách hậu mãi <br>
+                    Chính sách vận chuyển <br>
+                    Chính sách hoàn tiền <br>
+                    Bảo hành và sửa chữa đồng hồ
+                </p>
+            </div>
+            <div class="link">
+                <h1>Liên kết</h1>
+                <p>Trang chủ <br>
+                    Thương hiệu <br>
+                    Đồng hồ nam <br>
+                    Đồng hồ nữ <br>
+                    Đồng hồ đôi <br>
+                    Giỏ hàng <br>
+                    Đăng nhập <br>
+                    Đăng ký</p>
+            </div>
+            <div class="contact">
+                <h1>Liên hệ</h1>
+                <p>Facebook: Luxuryshopping <br>
+                    Gmail: Luxuryshop.vn <br>
+                    Hotline: 0988556325</p>
+                <img src="Image/Logo.png" alt="">
+            </div>
+            <div class="info-company">
+                <h1>Công ty xuất nhập khẩu hàng hiệu hoa kỳ</h1>
+                <p>Địa chỉ: 331 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP. HCM - Điện thoại: 1800 0091 |
+                    028 3833 9999 | 028 7777 6677 | 024 7777 6677 - MST: 0312756049</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Get_Info_Detail.js"></script>
+</body>
+
+</html>

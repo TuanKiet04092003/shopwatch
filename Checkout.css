@@ -1,0 +1,305 @@
+:root{
+    --green-color:#21B846;
+    --main-color: #B83E34;
+    --font-pop: "Poppins", sans-serif;
+    --font-alice: "Alice", sans-serif;
+    --font-Sans: 'Source Sans Pro', sans-serif;
+}
+.container .title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 100px;
+    background-image: url('Image/background-page-child.jpg');
+    background-repeat: no-repeat;
+    background-size: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+.title .title-left{
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+}
+.title .title-right{
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    right: 10px;
+}
+.title h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: var(--font-pop);
+    text-align: center;
+    color: white;
+}
+.layout-checkout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.form-checkout .img-type-card{
+    display: flex;
+    gap: 20px;
+}
+.form-checkout h1{
+    font-size: 15px;
+    font-family: var(--font-pop);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-type-card img{
+    padding: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+.form-checkout{
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 20px;
+}
+.form-checkout>input{
+    width: 100%;
+}
+.form-checkout input{
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.date-checkout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 40px;
+}
+.date-checkout input{
+    width: 100%;
+}
+.form-checkout button{
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-image: linear-gradient(var(--main-color), blue);
+    color: white;
+    font-weight: 550;
+    font-family: var(--font-Sans);
+    margin: 50px;
+    margin-left: 25%;
+}
+.form-checkout button:hover{
+    background-image: linear-gradient(var(--green-color),var(--main-color));
+}
+.summary-checkout{
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 20px 10px;
+}
+.summary-checkout .checkout-product{
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 3px gray;
+    display: flex;
+    height: 100px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.summary-checkout>h1{
+    font-family: var(--font-pop);
+    font-size: 15px;
+    margin: 10px 0;
+}
+.checkout-product h1{
+    font-size: 12px;
+    font-family: var(--font-pop);
+}
+.checkout-product img{
+    height: 100%;
+    padding: 10px;
+}
+.checkout-product p{
+    font-size: 12px;
+}
+.info-checkout-product{
+    padding: 10px 0;
+    line-height: 25px;
+}
+.checkout-price{
+    padding: 10px 10px;
+}
+.rating i{
+    font-size: 10px;
+}
+.fee-checkout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3,1fr) 2fr 1fr;
+    position: relative;
+    margin-top: 20px;
+}
+.fee-checkout h1{
+    font-family: var(--font-pop);
+    font-size: 15px;
+    font-weight: 550;
+}
+.fee-checkout hr{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+}
+.art-promotion{
+    margin-top: 50px;
+}
+/* ----------------------------Responsive Mobile---------------------------- */
+.icon-sub-menu{
+    display: none !important;
+}
+@media only screen and (max-width: 739px){
+    .container{
+        padding: 0 10px;
+    }
+    .menu{
+        display:none;
+    }
+    .icon-sub-menu{
+        display: block !important;
+    }
+    .sub-menu{
+        position: fixed;
+        top: 53px;
+        z-index: 101;
+        right: 20px;
+        display: none;
+    }
+    nav{
+        padding: 0 10px;
+    }
+    .sub-menu a{
+        background-color: white;
+        width: 120px;
+        font-family: var(--font-pop);
+        color: black;
+        text-decoration: none;
+        box-shadow: 1px 1px 2px gray;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 2px 5px;
+    }
+    .title{
+        height: 70px !important;
+    }
+    .title img{
+        height: 100px !important;
+    }
+    .title h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .container{
+        padding-top: 55px;
+    }
+    .sub-menu a:hover{
+        background-color: var(--main-color);
+        color: white;
+    }
+    .layout-checkout{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-type-card img{
+        width: 65px;
+    }
+    .form-checkout button{
+        width: 250px;
+        margin-left: 40px;
+    }
+    .contact img{
+        padding: 20px;
+        height: 100px;
+    }
+    .footer-layout h1{
+        font-size: 18px;
+        font-family: var(--font-pop);
+        color:  rgb(141, 138, 138);
+        padding: 20px 0;
+    }
+    .footer-layout p{
+        font-size: 14px;
+        font-family: var(--font-pop);
+        font-weight: light;   
+        color:   rgb(141, 138, 138);
+    }
+    .footer-layout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-layout div{
+        width: 160px;
+    }
+    footer{
+        margin-top: 180px;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .container{
+        padding: 0 10px;
+    }
+    .menu{
+        display:none;
+    }
+    .icon-sub-menu{
+        display: block !important;
+    }
+    .sub-menu{
+        position: fixed;
+        top: 53px;
+        z-index: 101;
+        right: 20px;
+        display: none;
+    }
+    nav{
+        padding: 0 10px;
+    }
+    .sub-menu a{
+        background-color: white;
+        width: 120px;
+        font-family: var(--font-pop);
+        color: black;
+        text-decoration: none;
+        box-shadow: 1px 1px 2px gray;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 2px 5px;
+    }
+    .container{
+        padding-top: 100px;
+    }
+    .layout-checkout{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .form-checkout{
+        width: 100%;
+    }
+    .summary-checkout{
+        width: 70%;
+    }
+}

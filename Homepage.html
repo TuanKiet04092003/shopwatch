@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Alice:regular" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Homepage</title>
+</head>
+
+<body>
+    <nav>
+        <img src="Image/Logo.png" height="60px">
+        <div class="menu">
+            <a href="Homepage.html">Trang chủ</a>
+            <a href="#">Thương hiệu</a>
+            <a href="Products.html">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="Contact.html">Liên hệ</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="Cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="Login.html"><i class="fa fa-user"></i></a>
+            <i class="fas fa-bars icon-sub-menu" onclick="appear()"></i>
+        </div>
+        <script>
+            var login=localStorage.getItem('login');
+            console.log('lllll',login);
+            if (login=='true'){
+                console.log('ssssssss');
+                document.getElementsByClassName('nav-icons')[0].children[2].innerHTML=`<img src="Image/Image-customer.jpg" alt="">`;
+            }
+        </script>
+    </nav>
+    <div class="sub-menu">
+        <a href="Homepage.html">Trang chủ</a>
+        <a href="#">Thương hiệu</a>
+        <a href="Products.html">Sản phẩm</a>
+        <a href="#">Đơn hàng</a>
+        <a href="Contact.html">Liên hệ</a>
+    </div>
+    <script>
+        var subMenu = document.getElementsByClassName('sub-menu')[0];
+        function appear() {
+            if (subMenu.style.display === 'none') {
+                subMenu.style.display = 'block';
+            } else {
+                subMenu.style.display = 'none';
+            }
+        }
+    </script>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h4>Welcome to Luxury</h4>
+                <h1>Trân trọng mỗi khoảnh khắc</h1>
+                <p>Mỗi người đàn ông cần một chiếc đồng hồ tốt, chắc chắn.
+                    Đồng hồ yêu thích của tôi là Rolex của Tổng thống.
+                    Tôi sở hữu nhiều đồng hồ, nhưng cái này thường là cái trên cổ tay của tôi.</p>
+                <button class="more">Xem thêm</button>
+                <button class="cart">Đặt hàng</button>
+            </div>
+            <div class="banner">
+                <img src="Image/imge-banner.jpg" alt="">
+                <!-- <div class="points">
+                    <div class="point-active"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div> -->
+            </div>
+        </header>
+        <article>
+            <center>
+                <section class="promotion">
+                    <div class="free-shipping">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div class="free-shipping">
+                            <h4>Miễn phí giao hàng</h4>
+                            <p> Khi đặt hàng trên toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-life-ring"></i>
+                        <div>
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p> Liên hệ bất kỳ lúc nào</p>
+                        </div>
+                    </div>
+                    <div class="safe">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Thanh toán an toàn</h4>
+                            <p>Thanh toán nhanh chóng</p>
+                        </div>
+                    </div>
+                </section>
+            </center>
+            <section class="products-hot">
+                <h1>Sản Phẩm Bán Chạy</h1>
+                <div class="products">
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product1.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <i class="fa fa-shopping-cart cart"></i>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Omega Constellation</p>
+                            <div class="ratting">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">452,088,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product2.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <i class="fa fa-shopping-cart cart"></i>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Versace V-Tribute</p>
+                            <div class="ratting">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">30,350,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-product">
+                            <center>
+                                <img src="Image/Product3.png" alt="">
+                            </center>
+                            <div class="product-icons">
+                                <i class="fa fa-shopping-cart cart"></i>
+                                <i class="fas fa-heart heart"></i>
+                                <a href="Detail.html"><i onclick="getInfoDetail(this)" class="fas fa-info info"></i></a>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <p class="name-product">Omega Constellation </p>
+                            <div class="ratting">
+                                <i class="fa fa-star star1"></i>
+                                <i class="fa fa-star star2"></i>
+                                <i class="fa fa-star star3"></i>
+                                <i class="fa fa-star star4"></i>
+                                <i class="fa fa-star star5"></i>
+                            </div>
+                            <p class="price-product">535,626,000đ</p>
+                            <button>Mua</button>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <button onclick="pre1()" class="left"><i class="fas fa-arrow-left"></i></button>
+                    <button onclick="next1()" class="right"><i class="fas fa-arrow-right"></i></button>
+                </center>
+            </section>
+            <script>
+                function next1() {
+                    var slide = document.getElementsByClassName('products')[0].children;
+                    for (let i = 0; i < document.getElementsByClassName('products')[0].children.length; i++) {
+                        document.getElementsByClassName('products')[0].children[i].style.animation = "";
+                    }
+                    setTimeout(function () {
+                        for (let i = 0; i < document.getElementsByClassName('products')[0].children.length; i++) {
+                            document.getElementsByClassName('products')[0].children[i].style.animation = "move-img-next 0.5s ease-in-out 1 forwards";
+                        }
+                        document.getElementsByClassName('products')[0].appendChild(slide[0]);
+                    }, 200);
+                }
+                function pre1() {
+                    var slide = document.getElementsByClassName('products')[0].children;
+                    for (let i = 0; i < document.getElementsByClassName('products')[0].children.length; i++) {
+                        document.getElementsByClassName('products')[0].children[i].style.animation = "";
+                    }
+                    setTimeout(function () {
+                        for (let i = 0; i < document.getElementsByClassName('products')[0].children.length; i++) {
+                            document.getElementsByClassName('products')[0].children[i].style.animation = "move-img-pre 0.5s ease-in-out 1 forwards";
+                        }
+                        document.getElementsByClassName('products')[0].prepend(slide[slide.length - 1]);
+                    }, 200);
+                }
+            </script>
+            <section class="slogan">
+                <img class="img-hight" src="Image/Image-slogan1.jpg" alt="">
+                <img class="img-low" src="Image/Image-slogan2.jpg" alt="">
+                <div class="slogan-bg">
+                    <h1 class="slogan-text">Hãy có khoảng thời gian tuyệt vời với chiếc đồng hồ hoàn hảo</h1>
+                </div>
+            </section>
+            <section class="watch-brand">
+                <h1>Đồng hồ hiệu</h1>
+                <div class="brands">
+                    <img src="Image/img-watch-brand1.png" alt="">
+                    <img src="Image/img-watch-brand2.png" alt="">
+                    <img src="Image/img-watch-brand3.png" alt="">
+                    <img src="Image/img-watch-brand4.png" alt="">
+                    <img src="Image/img-watch-brand5.png" alt="">
+                </div>
+                <center>
+                    <button onclick="pre()" class="left"><i class="fas fa-arrow-left"></i></button>
+                    <button onclick="next()" class="right"><i class="fas fa-arrow-right"></i></button>
+                </center>
+                <script>
+                    function next() {
+                        var slide = document.getElementsByClassName('brands')[0].children;
+                        for (let i = 0; i < document.getElementsByClassName('brands')[0].children.length; i++) {
+                            document.getElementsByClassName('brands')[0].children[i].style.animation = "";
+                        }
+                        setTimeout(function () {
+                            for (let i = 0; i < document.getElementsByClassName('brands')[0].children.length; i++) {
+                                document.getElementsByClassName('brands')[0].children[i].style.animation = "move-img-next 0.5s ease-in-out 1 forwards";
+                            }
+                            document.getElementsByClassName('brands')[0].appendChild(slide[0]);
+                        }, 200);
+                    }
+                    function pre() {
+                        var slide = document.getElementsByClassName('brands')[0].children;
+                        for (let i = 0; i < document.getElementsByClassName('brands')[0].children.length; i++) {
+                            document.getElementsByClassName('brands')[0].children[i].style.animation = "";
+                        }
+                        setTimeout(function () {
+                            for (let i = 0; i < document.getElementsByClassName('brands')[0].children.length; i++) {
+                                document.getElementsByClassName('brands')[0].children[i].style.animation = "move-img-pre 0.5s ease-in-out 1 forwards";
+                            }
+                            document.getElementsByClassName('brands')[0].prepend(slide[slide.length - 1]);
+                        }, 200);
+                    }
+                </script>
+            </section>
+            <section class="watch-knowledge">
+                <h1>Kiến thức đồng hồ</h1>
+                <div class="knowledge">
+                    <div class="knowledge-main">
+                        <img src="Image/img-knowledge-main.jpg" alt="">
+                        <h1>Đồng hồ mạ vàng có bền không</h1>
+                        <p>Hiện nay các dòng đồng hồ mạ vàng đang rất được <br>
+                            sang trọng cho người đeo thu hút hơn.</p>
+                    </div>
+                    <div class="knowledge-sub1">
+                        <img src="Image/img-knowledge1.jpg" alt="">
+                        <div class="text-knowledge">
+                            <h1>Open Heart Là Gì? </h1>
+                            <p>Mẫu đồng hồ Open Heart đang được rất nhiều người quan tâm.
+                                Để hiểu rõ hơn đồng hồ</p>
+                        </div>
+                        <button>Xem thêm</button>
+                    </div>
+                    <div class="knowledge-sub2">
+                        <img src="Image/img-knowledge2.jpg" alt="">
+                        <div class="text-knowledge">
+                            <h1>Cho người mới bắt đầu</h1>
+                            <p>Nếu bạn muốn tìm mua chiếc đồng hồ đầu tiên nhưng không biết bắt đầu từ đâu? </p>
+                        </div>
+                        <button>Xem thêm</button>
+                    </div>
+                    <div class="knowledge-sub3">
+                        <img src="Image/img-knowledge3.jpg" alt="">
+                        <div class="text-knowledge">
+                            <h1>Đồng hồ thế giới</h1>
+                            <p>Đồng hồ GMT là gì? Cùng khám phá các thuật ngữ về đồng
+                                Worldtimer, đồng hồ GMT</p>
+                        </div>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+            </section>
+            <h1 class="title-news">Tin tức</h1>
+            <center>
+                <section class="news">
+                    <div class="box-news1">
+                        <img src="Image/image-news5.png" alt="">
+                        <div class="content-news1">
+                            <h1>
+                                Bulova
+                            </h1>
+                            <span>Bulova ra mắt đồng hồ</span>
+                            <p>Bulova Classic Wilton GMT mới công bố vừa qua mang đến</p>
+                        </div>
+                    </div>
+                    <div class="box-news2">
+                        <div class="content-news2">
+                            <h1>
+                                Gucci
+                            </h1>
+                            <span>BST Đồng Hồ Gucci</span>
+                            <p>Bulova Classic Wilton GMT mới <br> công bố vừa qua mang đến</p>
+                        </div>
+                        <img src="Image/image-new4.png" alt="">
+                    </div>
+                    <div class="box-news3">
+                        <div class="content-news3">
+                            <h1>
+                                Versace
+                            </h1>
+                            <span>Top 10 Dòng Đồng Hồ Versace</span>
+                            <p>Versace là một trong những thương hiệu thời <br> trang cao cấp bậc nhất thế giới</p>
+                        </div>
+                        <img src="Image/image-news2.png" alt="">
+                    </div>
+                    <div class="box-news4">
+                        <div class="content-news4">
+                            <h1>
+                                Bvlgari
+                            </h1>
+                            <span>6 Thương Hiệu Đồng Hồ Ý</span>
+                            <p>Thương hiệu đồng hồ Ý <br> hoàn toàn mới</p>
+                        </div>
+                        <img src="Image/image-news6.png" alt="">
+
+                    </div>
+                </section>
+            </center>
+        </article>
+    </div>
+    <footer>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="footer-layout">
+            <div class="support">
+                <h1>Trợ giúp</h1>
+                <p>
+                    Về chúng tôi <br>
+                    Chính sách bảo mật <br>
+                    Chính sách cookie <br>
+                    Chính sách bán hàng <br>
+                    Chính sách hậu mãi <br>
+                    Chính sách vận chuyển <br>
+                    Chính sách hoàn tiền <br>
+                    Bảo hành và sửa chữa đồng hồ
+                </p>
+            </div>
+            <div class="link">
+                <h1>Liên kết</h1>
+                <p>Trang chủ <br>
+                    Thương hiệu <br>
+                    Đồng hồ nam <br>
+                    Đồng hồ nữ <br>
+                    Đồng hồ đôi <br>
+                    Giỏ hàng <br>
+                    Đăng nhập <br>
+                    Đăng ký</p>
+            </div>
+            <div class="contact">
+                <h1>Liên hệ</h1>
+                <p>Facebook: Luxuryshopping <br>
+                    Gmail: Luxuryshop.vn <br>
+                    Hotline: 0988556325</p>
+                <img src="Image/Logo.png" alt="">
+            </div>
+            <div class="info-company">
+                <h1>Công ty xuất nhập khẩu hàng hiệu hoa kỳ</h1>
+                <p>Địa chỉ: 331 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP. HCM - Điện thoại: 1800 0091 |
+                    028 3833 9999 | 028 7777 6677 | 024 7777 6677 - MST: 0312756049</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Get_Info_Detail.js"></script>
+
+</body>
+
+</html>
